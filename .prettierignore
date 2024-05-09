@@ -1,0 +1,10 @@
+/.vscode
+/node_modules
+./dist
+
+#  mongoDb pass word # 
+# mongodb+srv://<username>:<password>@firstcluster.pki69w8.mongodb.net/
+
+*.env
+.env
+.env.*
