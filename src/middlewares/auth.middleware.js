@@ -1,7 +1,7 @@
-import { ApiError } from "../utils/ApiError";
-import { asyncHandler } from "../utils/asyncHandler";
+import { ApiError } from "../utils/ApiError.js";
+import { asyncHandler } from "../utils/asyncHandler.js";
 import jwt from "jsonwebtoken";
-import { User } from "../models/user.model";
+import { User } from "../models/user.model.js";
 
 export const verifyJWT = asyncHandler(async (req,res,next)=>{
     try {
@@ -21,3 +21,4 @@ export const verifyJWT = asyncHandler(async (req,res,next)=>{
         throw new ApiError(401,error?.message||"Invalid access token")
     }
 })
+
